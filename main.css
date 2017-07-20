@@ -96,27 +96,36 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
     /*
-        TODO:
+        :
         - Flexbox - Create general spacing between nav links
     */
 }
 #main-navigation #logo{
-    margin-right: 400px;
+    margin-right: 500px;
 
     /*
-        TODO:
+        :
         - Flexbox - The logo needs to take up more space
         that the other links
     */
 }
+
+.content {
+  display: flex;
+  padding: 0px 75px;
+}
+
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    flex-basis: 1000px;
+    flex-basis: 70%;
+    position: relative;
+    bottom: 50px;
+    /*flex-grow: 3;*/
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -127,6 +136,10 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    flex-basis: 20%;
+    position: relative;
+    bottom: 50px;
+    /*flex-grow: 0;*/
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -167,15 +180,25 @@ article time{
     color: #666;
 }
 article img{
+  float: right;
+  width: 230px;
+  margin-left: 10px;
     /*
-        TODO:
+        :
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+  margin: 0px 0 0 0;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
     /*
-        TODO:
+        :
         - Style the article footer
         HINT: Look to the article header;
     */
